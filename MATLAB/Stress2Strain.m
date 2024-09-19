@@ -4,7 +4,7 @@
 % Creation date:    29-09-2023
 %%-----------------------------------------------------------------------%%
 
-function eps = Stress2Strain(sigma, E, nu)
+function epsilon = Stress2Strain(sigma, E, nu)
     %% Documentation
     % This function takes an arbitrary stress tensor and calculates the
     % corresponding strain tensor. It uses linear elasticity for the
@@ -26,7 +26,7 @@ function eps = Stress2Strain(sigma, E, nu)
     % eps: 3x3 matrix
     %   Strain tensor belonging to the stress tensor
     
-    %% Actual function
+    %% Function
 
     % check if stress tensor is symmetric
     if sigma(1,2) ~= sigma(2,1)
@@ -61,7 +61,7 @@ function eps = Stress2Strain(sigma, E, nu)
     eps_v = M*sigma_v;
 
     % convert to matrix notation
-    eps = [
+    epsilon = [
         eps_v(1) eps_v(6) eps_v(5);
         eps_v(6) eps_v(2) eps_v(4);
         eps_v(5) eps_v(4) eps_v(3)
