@@ -1,0 +1,8 @@
+function sigma_e = VonMises(sigma)
+    
+    sigma_prime = sigma - (1/3)*sigma_m*eye(3);
+
+    % calculate Von Mises stress
+    sigma_e = (3/2)*
+end
+

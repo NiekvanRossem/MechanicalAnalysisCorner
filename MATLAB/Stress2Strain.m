@@ -23,8 +23,8 @@ function epsilon = Stress2Strain(sigma, E, nu)
     %
     % OUTPUTS
     % =======
-    % eps: 3x3 matrix
-    %   Strain tensor belonging to the stress tensor
+    % epsilon: 3x3 matrix
+    %   Strain tensor belonging to the stress tensor.
     
     %% Function
 
